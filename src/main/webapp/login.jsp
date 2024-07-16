@@ -24,7 +24,7 @@
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
     <div class="card p-4" style="width: 20rem;">
         <h2 class="text-center mb-4">Login</h2>
-        <form action="java/LoginServ" method="post">
+        <form action="LoginServ" method="post">
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" class="form-control" required>
