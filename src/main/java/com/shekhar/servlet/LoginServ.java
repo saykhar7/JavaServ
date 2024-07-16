@@ -35,8 +35,10 @@ public class LoginServ extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		System.out.println("Hello I am from login");
-		// TODO Auto-generated method stub
+		System.out.println("Hello I am from login" + "this is what i get from the login page: ");
+		
+		System.out.println(request.getParameter("email"));
+		System.out.println(request.getParameter("password"));
 		//doGet(request, response);
 	}
 
