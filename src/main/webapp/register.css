@@ -1,0 +1,29 @@
+
+/* Set register.jpg as the background image filling the entire browser window */
+body {
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default margin */
+    color: white; /* Ensure text is visible over the background image */
+}
+
+/* Style the card to make it look good against the background */
+.card {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Add some padding and margin to the form elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}

@@ -1,0 +1,38 @@
+body{
+    min-height: 100vh;
+    background-image: url("static/landing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin:0;
+    color: darkblue;
+
+}
+
+.position-absolute{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.links a:hover{
+    font-size: 10px;
+    text-transform: uppercase;
+
+}
+
+.links a.btn-primary {
+    background-color: rgba(0, 123, 255, 0.8); /* Bootstrap primary color with opacity */
+}
+
+.links a.btn-secondary {
+    background-color: rgba(108, 117, 125, 0.8); /* Bootstrap secondary color with opacity */
+}
