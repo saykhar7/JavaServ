@@ -1,7 +1,6 @@
 package com.shekhar.servlet;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,29 +8,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/LoginServ")
-public class LoginServ extends HttpServlet {
+@WebServlet("/RegisterServ")
+public class RegisterServ extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-
-    public LoginServ() {
+       
+   
+    public RegisterServ() {
         super();
         
     }
 
-
 	
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		System.out.println("Data Passed into login page ");
-
-		String email = (String) request.getParameter("email");
-		String password = (String)request.getParameter("password");
-		//doGet(request, response);
 		
-		System.out.print(email.equals(password));
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
 		
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		
+		
+		System.out.println(firstName + lastName + email + password);		
 	}
 
 }
