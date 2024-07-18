@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.shekhar.dao.UserDaoImpl;
+
 
 @WebServlet("/RegisterServ")
 public class RegisterServ extends HttpServlet {
@@ -29,7 +31,8 @@ public class RegisterServ extends HttpServlet {
 		String password = request.getParameter("password");
 		
 		
-		System.out.println(firstName + lastName + email + password);		
+		UserDaoImpl uu = new UserDaoImpl();
+		uu.registerNewUser(firstName, lastName, email, password);
 	}
 
 }
